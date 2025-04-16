@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Positive Cup Generator</title>
+  <title>Starbucks Cup Message Generator</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -17,32 +17,39 @@
     .cup {
       background: #fff;
       border: 4px solid #00704A;
-      border-radius: 20px;
-      width: 300px;
-      height: 400px;
+      border-radius: 30px 30px 10px 10px;
+      width: 200px;
+      height: 300px;
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 20px;
+      padding: 10px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Starbucks_Coffee_Logo.svg/1024px-Starbucks_Coffee_Logo.svg.png');
+      background-repeat: no-repeat;
+      background-position: center 40px;
+      background-size: 80px;
     }
     .cup::before {
       content: '';
       position: absolute;
-      top: -40px;
-      width: 100px;
-      height: 40px;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 20px;
       background: #fff;
       border: 4px solid #00704A;
       border-bottom: none;
       border-radius: 20px 20px 0 0;
     }
     #message {
-      font-size: 1.3em;
+      font-size: 0.9em;
       color: #00704A;
       padding: 10px;
+      margin-top: 120px;
     }
     button {
       margin-top: 30px;
@@ -68,38 +75,57 @@
 
   <script>
     const messages = [
-      "Hope your day is as lovely as your smile!",
       "You’ve got this!",
-      "Sending you good vibes ☀️",
-      "You are appreciated!",
-      "One sip closer to greatness!",
-      "Take a deep breath—you’re doing amazing.",
-      "You radiate kindness.",
-      "Wishing you peace and warmth today.",
-      "Thanks for being you!",
-      "You make the world a little brighter.",
+      "Wishing you a peaceful day!",
+      "Sip, smile, shine.",
+      "Be kind to yourself.",
+      "Small sips, big dreams.",
+      "Take it one cup at a time.",
       "You are enough.",
-      "Your presence matters.",
-      "Let today be gentle on you.",
-      "Here’s to a calm and cozy moment.",
-      "Just a reminder: you’re awesome.",
-      "Grateful to serve you today!",
-      "You deserve all good things.",
-      "Keep being kind—it's powerful.",
-      "Joy looks good on you.",
-      "One cup at a time, you've got this.",
-      "Here’s your daily hug in a cup 🤗",
-      "You are seen. You are valued.",
-      "Your energy is inspiring.",
-      "Hope your coffee is strong and your heart is light!",
-      "A little love with every sip.",
-      "You bring good energy wherever you go.",
-      "Your effort matters—even the small stuff.",
-      "Wishing you a moment of peace today.",
-      "You’re doing better than you think.",
-      "We believe in you!",
-      "Your kindness makes a difference.",
-      "This moment is yours—enjoy it."
+      "Fresh start, fresh brew!",
+      "Sending you cozy vibes!",
+      "Be proud of how far you’ve come.",
+      "Warm thoughts in every sip.",
+      "You matter. Always.",
+      "Let today be gentle.",
+      "Cup full of comfort.",
+      "Pause. Breathe. Sip.",
+      "Rooting for you always!",
+      "Grateful for this moment.",
+      "Here's to new beginnings.",
+      "Coffee and kindness go together.",
+      "Joy is brewing!",
+      "Stay grounded and grateful.",
+      "Caffeine and compassion today!",
+      "Hope your cup overflows with joy.",
+      "You’re a warm light in this world.",
+      "Brew yourself some peace today.",
+      "Gentle reminder: you’re doing great.",
+      "Comfort in a cup, just for you.",
+      "Thank you for being you.",
+      "Hope this brings you a smile!",
+      "You bring joy wherever you go.",
+      "Let yourself rest today.",
+      "This cup comes with a hug.",
+      "You're making progress.",
+      "So proud of you.",
+      "Be gentle with yourself.",
+      "Savor the small wins.",
+      "Your energy is inspiring!",
+      "You've got a warm heart.",
+      "Keep your cup and your spirits full!",
+      "This moment is a gift.",
+      "Believe in your own magic.",
+      "The world needs your light.",
+      "A brew-tiful day awaits!",
+      "Breathe in courage, exhale doubt.",
+      "You are truly appreciated.",
+      "You’re stronger than you know.",
+      "Start fresh with every sip.",
+      "Let your kindness flow.",
+      "Cup of hope, just for you.",
+      "Never forget your worth.",
+      "Here’s to coffee and calmness!"
     ];
 
     function generateMessage() {
@@ -110,3 +136,4 @@
 
 </body>
 </html>
+
