@@ -14,6 +14,12 @@
       height: 100vh;
       margin: 0;
     }
+    h1 {
+      font-size: 2.5em;
+      color: #00704A;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
     .cup {
       background: #fff;
       border: 4px solid #00704A;
@@ -44,15 +50,16 @@
     }
     .logo {
       position: absolute;
-      top: 40px;
+      top: 20px;
       width: 80px;
       height: 80px;
     }
     #message {
-      font-size: 1em;
+      font-size: 1.2em;
       color: #00704A;
-      margin-top: 140px;
+      margin-top: 120px;
       z-index: 1;
+      font-weight: bold;
     }
     button {
       margin-top: 30px;
@@ -71,6 +78,7 @@
 </head>
 <body>
 
+  <h1>Barista Buddy</h1>
   <div class="cup">
     <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Starbucks_Coffee_Logo.svg/1024px-Starbucks_Coffee_Logo.svg.png" alt="Starbucks Logo">
     <div id="message">Click below to get your cup message!</div>
@@ -82,24 +90,23 @@
       "Stay kind", "You matter", "Be present", "Breathe deeply", "Spread joy",
       "Stay hopeful", "Love wins", "Smile more", "You’re loved", "Shine on",
       "Choose peace", "Be bold", "Dream big", "Gratitude grows", "Stay bright",
-      "Embrace calm", "Keep going", "Stay soft", "Feel everything", "Rest today",
-      "Trust yourself", "Be mindful", "Sip slowly", "You belong", "Shine bright",
-      "Go gently", "You sparkle", "You shine", "Take care", "Stay sweet",
-      "Be joyful", "Good vibes", "Peace, always", "Start fresh", "Choose love",
-      "Speak gently", "Breathe easy", "Grace wins", "Coffee hugs", "Kindness first",
-      "Be sunshine", "Enjoy now", "Slow down", "Sip happy", "Hope grows",
-      "Just breathe", "Feel peace", "Kind heart", "You’re glowing", "All good",
-      "Stay grateful", "Warm thoughts", "Enjoy today", "Be calm", "Shine daily",
-      "Smile inside", "Hug often", "Cherish moments", "Trust more", "Think happy",
+      "Embrace calm", "Keep going", "Stay soft", "Rest today", "Trust yourself",
+      "Be mindful", "Sip slowly", "You belong", "Shine bright", "Go gently",
+      "You sparkle", "You shine", "Take care", "Stay sweet", "Be joyful",
+      "Good vibes", "Start fresh", "Choose love", "Speak gently", "Breathe easy",
+      "Grace wins", "Coffee hugs", "Kindness first", "Be sunshine", "Enjoy now",
+      "Slow down", "Sip happy", "Hope grows", "Just breathe", "Feel peace",
+      "Kind heart", "You’re glowing", "All good", "Stay grateful", "Warm thoughts",
+      "Enjoy today", "Be calm", "Hug often", "Trust more", "Think happy",
       "Live fully", "Be comfy", "Quiet strength", "Rest easy", "Stay cool",
       "You’re strong", "Be cozy", "Celebrate you", "Peace wins", "Take chances",
       "Lift others", "Kind soul", "Radiate light", "Glow gently", "Speak love",
       "Give kindness", "Smile soft", "Inhale calm", "Share warmth", "Offer love",
-      "Rise gently", "Nourish spirit", "Joy multiplies", "Ease in", "Stillness matters",
-      "Laugh often", "Give thanks", "Grace flows", "Sip peace", "Be peaceful",
-      "Savor simplicity", "Shine onward", "Chase peace", "Sip softly", "Enjoy simplicity",
-      "Peace here", "Be steady", "Simple joys", "Kind vibes", "Stay bright",
-      "Glow up", "Shine daily", "Chill mode", "Breathe now", "Cozy vibes"
+      "Rise gently", "Joy multiplies", "Ease in", "Stillness matters", "Laugh often",
+      "Give thanks", "Grace flows", "Sip peace", "Be peaceful", "Glow up",
+      "Chill mode", "Breathe now", "Cozy vibes", "Peace here", "Be steady",
+      "Simple joys", "Kind vibes", "Shine daily", "You’re magic", "Choose joy",
+      "Grin big", "All smiles", "Be radiant", "Lotsa love", "Enjoy more"
     ];
 
     function generateMessage() {
