@@ -22,15 +22,12 @@
       height: 300px;
       position: relative;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
       text-align: center;
-      padding: 10px;
+      padding: 20px 10px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Starbucks_Coffee_Logo.svg/1024px-Starbucks_Coffee_Logo.svg.png');
-      background-repeat: no-repeat;
-      background-position: center 40px;
-      background-size: 80px;
     }
     .cup::before {
       content: '';
@@ -45,11 +42,17 @@
       border-bottom: none;
       border-radius: 20px 20px 0 0;
     }
+    .logo {
+      position: absolute;
+      top: 40px;
+      width: 80px;
+      height: 80px;
+    }
     #message {
-      font-size: 0.9em;
+      font-size: 1em;
       color: #00704A;
-      padding: 10px;
-      margin-top: 120px;
+      margin-top: 140px;
+      z-index: 1;
     }
     button {
       margin-top: 30px;
@@ -69,63 +72,34 @@
 <body>
 
   <div class="cup">
+    <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Starbucks_Coffee_Logo.svg/1024px-Starbucks_Coffee_Logo.svg.png" alt="Starbucks Logo">
     <div id="message">Click below to get your cup message!</div>
   </div>
   <button onclick="generateMessage()">Generate Message</button>
 
   <script>
     const messages = [
-      "You’ve got this!",
-      "Wishing you a peaceful day!",
-      "Sip, smile, shine.",
-      "Be kind to yourself.",
-      "Small sips, big dreams.",
-      "Take it one cup at a time.",
-      "You are enough.",
-      "Fresh start, fresh brew!",
-      "Sending you cozy vibes!",
-      "Be proud of how far you’ve come.",
-      "Warm thoughts in every sip.",
-      "You matter. Always.",
-      "Let today be gentle.",
-      "Cup full of comfort.",
-      "Pause. Breathe. Sip.",
-      "Rooting for you always!",
-      "Grateful for this moment.",
-      "Here's to new beginnings.",
-      "Coffee and kindness go together.",
-      "Joy is brewing!",
-      "Stay grounded and grateful.",
-      "Caffeine and compassion today!",
-      "Hope your cup overflows with joy.",
-      "You’re a warm light in this world.",
-      "Brew yourself some peace today.",
-      "Gentle reminder: you’re doing great.",
-      "Comfort in a cup, just for you.",
-      "Thank you for being you.",
-      "Hope this brings you a smile!",
-      "You bring joy wherever you go.",
-      "Let yourself rest today.",
-      "This cup comes with a hug.",
-      "You're making progress.",
-      "So proud of you.",
-      "Be gentle with yourself.",
-      "Savor the small wins.",
-      "Your energy is inspiring!",
-      "You've got a warm heart.",
-      "Keep your cup and your spirits full!",
-      "This moment is a gift.",
-      "Believe in your own magic.",
-      "The world needs your light.",
-      "A brew-tiful day awaits!",
-      "Breathe in courage, exhale doubt.",
-      "You are truly appreciated.",
-      "You’re stronger than you know.",
-      "Start fresh with every sip.",
-      "Let your kindness flow.",
-      "Cup of hope, just for you.",
-      "Never forget your worth.",
-      "Here’s to coffee and calmness!"
+      "Stay kind", "You matter", "Be present", "Breathe deeply", "Spread joy",
+      "Stay hopeful", "Love wins", "Smile more", "You’re loved", "Shine on",
+      "Choose peace", "Be bold", "Dream big", "Gratitude grows", "Stay bright",
+      "Embrace calm", "Keep going", "Stay soft", "Feel everything", "Rest today",
+      "Trust yourself", "Be mindful", "Sip slowly", "You belong", "Shine bright",
+      "Go gently", "You sparkle", "You shine", "Take care", "Stay sweet",
+      "Be joyful", "Good vibes", "Peace, always", "Start fresh", "Choose love",
+      "Speak gently", "Breathe easy", "Grace wins", "Coffee hugs", "Kindness first",
+      "Be sunshine", "Enjoy now", "Slow down", "Sip happy", "Hope grows",
+      "Just breathe", "Feel peace", "Kind heart", "You’re glowing", "All good",
+      "Stay grateful", "Warm thoughts", "Enjoy today", "Be calm", "Shine daily",
+      "Smile inside", "Hug often", "Cherish moments", "Trust more", "Think happy",
+      "Live fully", "Be comfy", "Quiet strength", "Rest easy", "Stay cool",
+      "You’re strong", "Be cozy", "Celebrate you", "Peace wins", "Take chances",
+      "Lift others", "Kind soul", "Radiate light", "Glow gently", "Speak love",
+      "Give kindness", "Smile soft", "Inhale calm", "Share warmth", "Offer love",
+      "Rise gently", "Nourish spirit", "Joy multiplies", "Ease in", "Stillness matters",
+      "Laugh often", "Give thanks", "Grace flows", "Sip peace", "Be peaceful",
+      "Savor simplicity", "Shine onward", "Chase peace", "Sip softly", "Enjoy simplicity",
+      "Peace here", "Be steady", "Simple joys", "Kind vibes", "Stay bright",
+      "Glow up", "Shine daily", "Chill mode", "Breathe now", "Cozy vibes"
     ];
 
     function generateMessage() {
@@ -136,4 +110,3 @@
 
 </body>
 </html>
-
